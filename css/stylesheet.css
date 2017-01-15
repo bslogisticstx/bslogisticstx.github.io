@@ -96,6 +96,11 @@ section{
   text-align: center;
 }
 
+.bottom-blurb{
+  color: white;
+  font-family: 'Prompt', sans-serif;
+}
+
 @media screen and (max-width: 650px){
   .title{
     font-size: 45px;
