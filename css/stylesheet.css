@@ -96,11 +96,13 @@ section{
   text-align: center;
 }
 
-.bottom-blurb {
-    color: white;
-    font-family: 'Prompt', sans-serif;
-    position: absolute;
-    bottom: 0;
+ #homepage .bottom-blurb{
+  color: white;
+  font-family: 'Prompt', sans-serif;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
 
 @media screen and (max-width: 650px){
