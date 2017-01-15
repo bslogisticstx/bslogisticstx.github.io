@@ -1,0 +1,511 @@
+/*--------------------------------GLOBAL VARIABLES -------------------------------------------*/
+html, body{
+  padding: 15px 15px 15px 15px;
+}
+
+*{
+  moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    font-family: 'Prompt', sans-serif;
+}
+
+.navbar-default{
+  border-color: white;
+  background-color: white;
+
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+/*.social-media{
+  max-width: 680px;
+  padding-top: 20px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media > div{
+	margin-right: 0px;
+}*/
+
+section{
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+  width: 100%;
+  margin-right: 0;
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#title-services, #title-delivered, #about-title, #contact-title{
+  font-size: 36px;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 36px;
+  margin: 0;
+  color: #333333;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+
+/*https://codepen.io/hollow3d/pen/ENgvvX*/
+/*--------------------------------HOME PAGE -------------------------------------------*/
+
+#homepage{
+  height: 100vh;
+  max-width: 100%;
+  background: url('../images/homePage-road.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title{
+  color: white;
+  font-family: 'Racing Sans One', cursive;
+  font-size: 70px;
+  font-style: cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.sub_title{
+  color: white;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  font-size: 1.35rem;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 650px){
+  .title{
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 481px){
+  .title{
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  nav a{
+    font-size: 12px;
+
+
+  }
+}
+/*--------------------------------SERVICES -------------------------------------------*/
+#service-content{
+  /*padding-top: 150px;*/
+  height: 100%;
+  background: #ffffff;
+}
+.service-container{
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 450px;
+}
+
+.service-container .flex{
+  display: flex;
+  padding: 0px;
+}
+
+.flex li{
+  margin: 0 auto;
+  list-style: none;
+  width: 50vh;
+  height: 5vh;
+  background-color: #c99065;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  margin: 8px;
+}
+
+@media only screen and (max-width: 1200px){
+
+  .service-container{
+    margin-top: 300px;
+    margin: 0 auto;
+  }
+
+  .service-container .flex {
+    display:inline-block;
+  }
+
+  .flex{
+    column-count: 3;
+  }
+
+  .flex li{
+    width: 25vh;
+    -webkit-margin-before: 0;
+    -moz-margin-before: 0;
+      margin-before: 0;
+  }
+}
+
+@media only screen and (max-width: 800px){
+
+  .flex{
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 540px){
+
+  .flex{
+    column-count: 1;
+  }
+}
+
+
+/*--------------------------------preview work -------------------------------------------*/
+
+#preview-work{
+  max-width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+}
+
+/* Main carousel style */
+.carousel {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+/* Indicators list style */
+.article-slide .carousel-indicators {
+  position: inherit;
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+/* Indicators list style */
+.article-slide .carousel-indicators li {
+    border: medium none;
+    border-radius: 0;
+    float: left;
+    height: 54px;
+    margin-bottom: 5px;
+    margin-left: 0;
+    margin-right: 5px !important;
+    margin-top: 0;
+    width: 100px;
+}
+/* Indicators images style */
+.article-slide .carousel-indicators img {
+    border: 2px solid #FFFFFF;
+    float: left;
+    height: 54px;
+    left: 0;
+    width: 100px;
+}
+/* Indicators active image style */
+.article-slide .carousel-indicators .active img {
+    border: 2px solid #428BCA;
+    opacity: 0.7;
+}
+
+
+@media only screen and (min-height: 1024px){
+  .carousel{
+    height: 300px;
+  }
+
+}
+
+@media only screen and (max-width: 1100px){
+  .carousel {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 823px){
+  .carousel {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 718px){
+  .carousel {
+    width: 500px;
+  }
+
+  .article-slide .carousel-indicators li{
+    width: 50px;
+    margin-bottom: 0px;
+  }
+
+  .article-slide .carousel-indicators img{
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 620px){
+  .carousel {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 520px){
+  .carousel {
+    width: 280px;
+  }
+}
+
+@media only screen and (max-height: 414px){
+  #preview-work {
+    height: 100%;
+  }
+}
+
+
+/*--------------------------------About -------------------------------------------*/
+#about-company{
+  background: #ffffff;
+}
+
+.blurb{
+  max-width: 620px;
+  font-family: Baskerville, “Baskerville Old Face”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+	padding: 0 15px;
+	margin: 50px auto;
+	font-size: 19px;
+	text-align: center;
+	font-weight: 300px;
+}
+
+#truck{
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+}
+
+#bio-content{
+  overflow: auto;
+  width: 100%;
+  background: #ffffff;
+}
+
+#left, #right{
+  width: 40%;
+  margin: 5px;
+  padding: 1em;
+  background: #ffffff;
+}
+
+#left{float: left; margin-left: 100px;}
+#right{float: right; margin-right: 100px;}
+
+@media only screen and (max-width: 1170px){
+
+  #left{
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #right{
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 427px){
+
+  .my-face img{
+    max-width: 90%;
+  }
+
+}
+
+
+
+
+/*--------------------------------contact -------------------------------------------*/
+#contactPage{
+  -webkit-font-smoothing: antialiased;
+  background: #424242;
+  color: #ffffff;
+}
+
+#contact-title{
+  color: #FFFFFF;
+  padding-top: 20px;
+}
+
+/*section .inner{
+  max-width: 1253px;
+  margin: 0 auto;
+  overflow: hidden;
+}*/
+
+section .content{
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.half-left, .half-right{
+  width: 40%;
+  margin: 5px;
+  padding: 1em;
+}
+
+.haf-left{float: left;}
+.half-right{float: right; margin-right: 100px;}
+
+section .content .half-left {
+  text-align: left;
+  font-family: Baskerville, “Baskerville Old Face”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+
+section .content .half-right{
+  text-align: left;
+}
+
+form{
+  max-width: 450px;
+  margin: 0 auto 50px;
+}
+
+input, textarea{
+  border: 3px solid #c99065;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  color: darkslategray;
+}
+
+.submit-wrapper{
+  text-align: right;
+}
+
+input[type="submit"]{
+  background: #c99065;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 33%;
+
+}
+
+input[type="submit"]:hover{
+  background: #e1c184;
+}
+
+textarea{
+  height: 10em;
+}
+
+.contact-info-group input:focus, textarea:focus{
+  outline: none;
+  border-color: #e1c184;
+}
+
+.contact-info-group label{
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+}
+
+.contact-info-group label:nth-child(1){
+  padding-right: 10px;
+}
+
+.contact-info-group label:nth-child(2){
+  padding-left: 10px;
+}
+
+
+label{
+  display: block;
+  margin-bottom: 20px;
+}
+
+span{
+  display: block;
+}
+
+#contactPage .left .address, .telephone, .email {
+  margin-top: 48px;
+  font-size: 19px;
+  line-height: 29px;
+  font-family: Baskerville, “Baskerville Old Face”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+}
+
+.email a{
+  color: #ffffff;
+  font-size: 19px;
+  line-height: 29px;
+  padding-bottom: 3px;
+  text-decoration: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 1108px){
+  .half-right{
+    margin-right: 70px;
+  }
+}
+
+@media only screen and (max-width: 1000px){
+  .half-right{
+    float: none;
+    margin-right: 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .half-left{
+  width: 100%;
+  margin: 0 auto;
+  }
+
+  .half-left > div{
+    display: inline-table;
+    margin-left: 90px;
+  }
+
+}
+
+@media only screen and (max-width: 900px){
+  .half-left > div{
+    margin-left: 40px;
+    display: inline-block;
+  }
+
+}
