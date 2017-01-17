@@ -170,7 +170,7 @@ section{
   }
 
   .flex{
-    column-count: 3;
+    column-count: 2;
   }
 
   .flex li{
