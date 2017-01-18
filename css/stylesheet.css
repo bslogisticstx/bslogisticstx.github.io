@@ -1,3 +1,4 @@
+/*--------------------------------GLOBAL VARIABLES -------------------------------------------*/
 html, body{
   padding: 15px 15px 15px 15px;
 }
@@ -24,19 +25,6 @@ html, body{
 .navbar .navbar-collapse {
     text-align: center;
 }
-
-/*.social-media{
-  max-width: 680px;
-  padding-top: 20px;
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.social-media > div{
-	margin-right: 0px;
-}*/
 
 section{
   display: inline-block;
@@ -102,12 +90,15 @@ section{
   position: absolute;
   bottom: 0;
   text-align: center;
-  width: 93%;
+  width: 100%;
 }
+
+
 
 @media screen and (max-width: 650px){
   .title{
     font-size: 45px;
+    padding-bottom: 0px;
   }
 }
 
@@ -130,16 +121,14 @@ section{
 }
 /*--------------------------------SERVICES -------------------------------------------*/
 #service-content{
-  /*padding-top: 150px;*/
   height: 100%;
   background: #ffffff;
 }
 .service-container{
   width: 100%;
-  height: 50%;
+  height: 60%;
   margin: 0 auto;
   text-align: center;
-  margin-top: 450px;
 }
 
 .service-container .flex{
@@ -147,11 +136,16 @@ section{
   padding: 0px;
 }
 
+.main-trucks img{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 .flex li{
   margin: 0 auto;
   list-style: none;
   width: 50vh;
-  height: 5vh;
+  height: 8vh;
   background-color: #c99065;
   color: white;
   padding: 10px 10px 10px 10px;
@@ -327,12 +321,12 @@ section{
     width: 95%;
   }
   .article-slide .carousel-indicators li{
-    width: 40px;
+    width: 28px;
     margin-bottom: 0px;
   }
 
   .article-slide .carousel-indicators img{
-    width: 45px;
+    width: 40px;
   }
 
 }
@@ -398,9 +392,6 @@ section{
 
 }
 
-
-
-
 /*--------------------------------contact -------------------------------------------*/
 #contactPage{
   -webkit-font-smoothing: antialiased;
@@ -412,12 +403,6 @@ section{
   color: #FFFFFF;
   padding-top: 20px;
 }
-
-/*section .inner{
-  max-width: 1253px;
-  margin: 0 auto;
-  overflow: hidden;
-}*/
 
 section .content{
   max-width: 100%;
@@ -510,17 +495,20 @@ span{
   display: block;
 }
 
-#contactPage .left .address, .telephone, .email {
+#contactPage .left, .address, .telephone, .email {
   margin-top: 48px;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 29px;
-  font-family: Baskerville, “Baskerville Old Face”, “Hoefler Text”, Garamond, “Times New Roman”, serif;
+}
+
+.telephone a{
+
+  color: white !important;
+  text-decoration: none;
 }
 
 .email a{
   color: #ffffff;
-  font-size: 19px;
-  line-height: 29px;
   padding-bottom: 3px;
   text-decoration: none;
   outline: none;
